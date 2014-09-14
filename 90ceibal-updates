@@ -1,0 +1,19 @@
+// Des-habilitar unattended-upgrades.
+// La actualizacion se gestiona via /usr/sbin/ceibal-update
+APT::Periodic::Update-Package-Lists "0";
+APT::Periodic::Unattended-Upgrade "0";
+
+// Deshabilitar origenes por defecto
+#clear Unattended-Upgrade::Allowed-Origins;
+
+// Configurar repositorio Ceibal
+// Todo: Cambiar a "Proyecto Ceibal:stable" cuando se cree el repo.
+// Unattended-Upgrade::Allowed-Origins {
+//         "Proyecto Cebail:tatu";
+// };
+
+// Sobreescribir conf files automaticamente.
+// Alternativamente: "--force-confdef"; "--force-confnew";?
+// DPkg::options { 
+//	"--force-confnew";
+// }

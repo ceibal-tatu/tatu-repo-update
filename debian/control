@@ -1,0 +1,15 @@
+Source: tatu-repo-update
+Section: admin
+Priority: optional
+Maintainer: Plan Ceibal <ceibal@plan.ceibal.edu.uy>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.5
+Vcs-Git: git://github.com/ceibal-tatu/tatu-repo-update.git
+Vcs-Browser: https://github.com/ceibal-tatu/tatu-repo-update/
+
+Package: tatu-repo-update
+Architecture: all
+Depends: ${misc:Depends}, wget, apt
+Description: Repositorio Tatu - Actualización.
+ Configura e instala las claves necesarias para usar el repositorio Tatu.
+ Este paquete es para instalación en equipos basados en imagen Ceibal-CM.
