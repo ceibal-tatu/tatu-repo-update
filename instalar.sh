@@ -18,7 +18,7 @@ SOURCE_DIR=$(mktemp --tmpdir -d "tatu-update-XXXXXX")
 cd "${SOURCE_DIR}"
 
 /usr/bin/wget "http://taturepo1.ddns.net/${PACKAGE}"
-if [[ "$?" -ne 0 -o ! -f ${PACKAGE} ]]; then
+if [[ "$?" -ne 0 ]] || [[ ! -f ${PACKAGE} ]]; then
     echo "Error al bajar ${PACKAGE}." >&2
     exit 1
 fi
