@@ -20,8 +20,8 @@ set -e
 
 case "$1" in
     configure)
-	if [ -x '/usr/share/doc/tatu.gpg.key' ]; then
-		cat /usr/share/doc/tatu.gpg.key | apt-key add -
+	if [ -x '/usr/share/doc/tatu-repo-update/tatu.gpg.key' ]; then
+		cat /usr/share/doc/tatu-repo-update/tatu.gpg.key | apt-key add -
 	else
 		wget http://taturepo1.ddns.net/tatu.gpg.key -O - | apt-key add -
 	fi
