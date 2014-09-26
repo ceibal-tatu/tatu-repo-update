@@ -1,3 +1,9 @@
+tatu-repo-update (0.3) tatu; urgency=medium
+
+  * Release to tatu. 
+
+ -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Thu, 25 Sep 2014 22:16:47 -0300
+
 tatu-repo-update (0.2) unstable; urgency=medium
 
   * Autoclean & Autoremove on update. 
