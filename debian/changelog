@@ -2,7 +2,7 @@ tatu-repo-update (0.4) tatu; urgency=medium
 
   * Print message before updating on cron script. 
 
- -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Mon, 29 Sep 2014 22:27:38 -0300
+ -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Mon, 29 Sep 2014 22:28:03 -0300
 
 tatu-repo-update (0.3) tatu; urgency=medium
 
