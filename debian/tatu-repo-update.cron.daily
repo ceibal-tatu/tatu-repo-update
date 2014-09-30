@@ -2,8 +2,7 @@
 # Ejecuta ceibal-update periodicamente para obtener actualizaciones
 # de paquetes requeridos del Plan Ceibal.
 
-set -e
-
 [ -x /usr/sbin/ceibal-update ] || exit 0
 
+echo "Actualizando Ceibal."
 /usr/sbin/ceibal-update
