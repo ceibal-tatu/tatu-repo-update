@@ -1,5 +1,6 @@
 #!/bin/sh
 
+logger "Actualizando Ceibal."
 apt-get update -y
 apt-get install -y -o Dpkg::Options::="--force-confnew" ceibal-update
 apt-get autoremove
