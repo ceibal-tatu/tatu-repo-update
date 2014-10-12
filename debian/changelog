@@ -1,3 +1,9 @@
+tatu-repo-update (0.5) tatu; urgency=medium
+
+  * Print from ceibal-update using syslog.
+
+ -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Sun, 12 Oct 2014 19:56:20 -0200
+
 tatu-repo-update (0.4) tatu; urgency=medium
 
   * Print message before updating on cron script. 
