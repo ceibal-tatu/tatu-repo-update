@@ -1,3 +1,9 @@
+tatu-repo-update (0.6) tatu; urgency=medium
+
+  * Do not disable ubuntu packages. 
+
+ -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Fri, 24 Oct 2014 14:29:05 -0200
+
 tatu-repo-update (0.5) tatu; urgency=medium
 
   * Print from ceibal-update using syslog.
