@@ -1,7 +1,7 @@
 # Deshabilitar instalación de paquetes de Ubuntu
-Package: *
-Pin: release o=Ubuntu
-Pin-Priority: -1
+# Package: *
+# Pin: release o=Ubuntu
+# Pin-Priority: -1
 
 # Prioridad máxima a paquetes del Proyecto Ceibal
 # Permite downgrade en caso de ser necesario
