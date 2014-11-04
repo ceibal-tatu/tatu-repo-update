@@ -17,7 +17,7 @@ PACKAGE=tatu-repo-update.deb
 SOURCE_DIR=$(mktemp --tmpdir -d "tatu-update-XXXXXX")
 cd "${SOURCE_DIR}"
 
-/usr/bin/wget "http://taturepo1.ddns.net/${PACKAGE}"
+/usr/bin/wget "http://tatumaster.ddns.net/${PACKAGE}"
 if [[ "$?" -ne 0 ]] || [[ ! -f ${PACKAGE} ]]; then
     echo "Error al bajar ${PACKAGE}." >&2
     exit 1
