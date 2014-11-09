@@ -1,6 +1,0 @@
-#!/bin/sh
-# Ejecuta ceibal-update periodicamente para obtener actualizaciones
-# de paquetes requeridos del Plan Ceibal.
-
-[ -x /usr/sbin/ceibal-update ] || exit 0
-/usr/sbin/ceibal-update
