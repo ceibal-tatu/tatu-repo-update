@@ -4,13 +4,13 @@ logger "Actualizando Ceibal."
 
 apt-get update -y
 if [ $? -ne 0 ]; then
-    logger "Error ejecutando apt-get update ($?)."
+    logger "Error ejecutando apt-get update."
     exit 1
 fi
 
 apt-get install -y -o Dpkg::Options::="--force-confnew" ceibal-update
 if [ $? -ne 0 ]; then
-    logger "Error ejecutando apt-get install ($?)."
+    logger "Error ejecutando apt-get install."
     exit 2
 fi
 
