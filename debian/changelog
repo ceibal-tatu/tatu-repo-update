@@ -1,8 +1,8 @@
-tatu-repo-update (0.8) UNRELEASED; urgency=medium
+tatu-repo-update (0.8) tatu; urgency=medium
 
   * Try checking for updates every 10 minutes but only once a day.
 
- -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Sun, 09 Nov 2014 14:02:18 -0200
+ -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Sun, 09 Nov 2014 14:13:14 -0200
 
 tatu-repo-update (0.7) tatu; urgency=medium
 
