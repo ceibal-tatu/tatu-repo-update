@@ -13,3 +13,4 @@ install: all
 	install -o root -g root -m 644 90ceibal.pref $(DESTDIR)/etc/apt/preferences.d/
 	install -d $(DESTDIR)/etc/apt/sources.list.d/
 	install -o root -g root -m 644 tatu.list $(DESTDIR)/etc/apt/sources.list.d/
+	install -o root -g root -m 755 -d $(DESTDIR)/etc/ceibal-update.d/

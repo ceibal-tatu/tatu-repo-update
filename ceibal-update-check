@@ -5,7 +5,9 @@
 set -u
 
 TIMESTAMP=/var/spool/ceibal-update-check/last-check
+RUN_AGAIN=/var/spool/ceibal-update-check/rerun
 RUN_FILE=/var/run/ceibal-update-check.pid
+CEIBAL_UPDATE=/usr/sbin/ceibal-update
 
 # Verificar que no se esté ejecutando el proceso de update.
 if [[ -e ${RUN_FILE} ]]; then
@@ -24,7 +26,15 @@ if [[ ! -e ${TIMESTAMP} || $(find ${TIMESTAMP} -mtime +1) ]]; then
     logger "Ejecutando ceibal-update en ${WAIT_SECS}s."
     sleep "${WAIT_SECS}s"
  
-    /usr/sbin/ceibal-update
+    ${CEIBAL_UPDATE}
+
+    # Si luego de ejecutar el update quedo una marca para volver a ejecutar ceibal-update,
+    # borrar la marca y re-ejecutar.
+    # Esta marca se utiliza normalmente cuando un paquete agrega una entrada en /etc/ceibal-update.d/
+    while [ -f ${RUN_AGAIN} ]; do
+        rm ${RUN_AGAIN}
+        ${CEIBAL_UPDATE}
+    done
     
     # Si terminó exitosamente, actualizar el timestamp.
     if [ $? -eq 0 ]; then
