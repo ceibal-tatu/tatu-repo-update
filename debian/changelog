@@ -1,10 +1,10 @@
-tatu-repo-update (0.10ubuntu1) UNRELEASED; urgency=medium
+tatu-repo-update (0.11) tatu; urgency=medium
 
   * Added /etc/ceibal-update.d/ directory for package specific update scripts.
   * Check /var/spool/ceibal-update-check/rerun after ceibal-update to see if
     another run is required after update.
 
- -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Tue, 09 Dec 2014 09:52:09 -0200
+ -- Plan Ceibal <ceibal@plan.ceibal.edu.uy>  Fri, 02 Jan 2015 10:34:24 -0200
 
 tatu-repo-update (0.10) tatu; urgency=medium
 
